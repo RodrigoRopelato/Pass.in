@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Unite Summit",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/bce5f015-5751-4267-a362-e59f416b517f/attendees
+Content-Type: application/json
+
+{
+    "name": "Rodrigo Ropelato",
+    "email": "rodrigoropelato2@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/bce5f015-5751-4267-a362-e59f416b517f
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/2/check-in
+
+###
+
+GET http://localhost:3333/events/bce5f015-5751-4267-a362-e59f416b517f/attendees
